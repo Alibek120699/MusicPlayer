@@ -14,7 +14,7 @@ export default class App extends Component {
                 <Router>
                     <Switch>
                         <Route path="/mop"
-                            component={ PlayerConnector } />
+                            component={PlayerConnector} />
                         <Redirect to="/mop" />
                     </Switch>
                 </Router>

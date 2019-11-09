@@ -5,7 +5,12 @@ export const DataTypes = {
 
 export const ActionTypes = {
     DATA_LOAD: "data_load",
-    ADD_TO_CATEGORY: "add_to_category",
-    REMOVE_FROM_CATEGORY: "remove_from_category",
-    CLEAR_CATEGORY: "clear_category",
+    DATA_SET_SORT_PROPERTY: "data_set_sort",
+    DATA_SET_PAGESIZE: "data_set_pagesize",
+    ADD_TO_PLAYLIST: "add_to_playlist",
+    REMOVE_FROM_PLAYLIST: "remove_from_playlist",
+    CLEAR_PLAYLIST: "clear_playlist",
 }
+
+
+

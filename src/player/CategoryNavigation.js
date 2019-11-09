@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { ToggleLink } from "../ToggleLink";
 
 export class CategoryNavigation extends Component {
 
     render(){
         return (
-            <React.Fragment>
-                <ToggleLink to={this.props.baseUrl}
-                    exact={true}>
+            <div className="container">
+                <ToggleLink to={`${this.props.baseUrl}/all`}
+                    exact={false}>
                         All Songs
                 </ToggleLink>
                 {
@@ -18,17 +17,7 @@ export class CategoryNavigation extends Component {
                                 {c}
                         </ToggleLink>)
                 }
-                <Link 
-                    className="btn btn-danger"
-                    to="/mop/player">
-                        Player Page
-                </Link> <br />
-                <Link 
-                    className="btn btn-warning"
-                    to="/mop/signup">
-                        Logout
-                </Link>
-            </React.Fragment>
+            </div>
         );
     }
 }
